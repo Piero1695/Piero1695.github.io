@@ -78,15 +78,30 @@
                 </nav>
                 
                 <main>
-                   <div class="comtent">
-                       <h1>Portfolio</h1>
-                       <ul id="portfolio">
-                       </ul>
-                   </div>
+                    
+                    <div class="sidebar">
+                        <img src="images/Me.png">
+                    </div>
+                    
+                    <div class="content">
+                        <header>Gregory Ducre</header>
+                        <p>
+                            Student at Northshore High School
+                        </p>
+                        
+                        <section class="interest">
+                            <header> Interest </header>
+                            <ul>
+                                <li> Coding</li>
+                                <li> Video Games</li>
+                                <li> Taekwondo</li>
+                            </ul>
+                        </section>
+                    </div>
                 </main>
             </div>
             
         </body>
-         <script id="portfolioScript">$(document).ready(function() {$.getJSON('projects/projects.json').then(function(data) { data.projects.forEach(function(project){ $('#portfolio').append('<li><a href="projects/' + project.name + '/">' + project.title + ' : ' + project.description + '</a></li>'); }); }); });</script>
+        
     </html>
 
