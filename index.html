@@ -7,7 +7,7 @@
     body {
         background: RGB(0, 0, 0);
         color: black;
-        padding: 10px;
+        padding: 5px;
         font-family: arial;
     }
     header {
@@ -23,15 +23,15 @@
     nav {
         background: RGB(213, 1, 1);
         margin: 0 auto;
-        margin-bottom:20px;
+        margin-bottom: 20px;
         display: flex;
-        padding: 10px;
+        padding: 0px;
         border-style: solid;
         border-color: rgb(159, 11, 11);
     }
     nav header {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         color: rgb(255, 255, 255);
         flex: 1;
     }
@@ -41,6 +41,7 @@
     nav li {
         display: inline-block;
         padding: 0 10px;
+        margin-top: 5px;
         border-style: solid;
         border-color: rgb(189, 11, 11);
     }
@@ -62,6 +63,8 @@
     }
     .sidebar img {
         width: 200px;
+        border-style: solid;
+        border-color: rgb(5, 5, 0);
     }
     .content {
         flex: 1;
@@ -69,6 +72,7 @@
     }
     .interests header {
         font-size: 1.5em;
+        text-decoration: underline;
     }
 </style>
         </head>
@@ -96,7 +100,7 @@
                         </p>
                         
                         <section class="interest">
-                            <header> Interest </header>
+                            <header> <u>Interest</u> </header>
                             <ul>
                                 <li> Coding</li>
                                 <li> Video Games</li>
